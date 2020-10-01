@@ -14,15 +14,31 @@
 
 <body>
   <header>
-    <div id="logo" onclick="slowscroll('#top')">
+    <div id="logo" onclick="slowScroll('#top')">
       <span>Site</span>
     </div>
     <div id="about">
-      <a href="#" title="First" onclick="slowscroll('#main')">First</a>
-      <a href="#" title="Second" onclick="slowscroll('#main2')">Second</a>
+      <a href="#" title="First" onclick="slowscroll('#top')">First</a>
+      <a href="#" title="Second" onclick="slowscroll('#main')">Second</a>
       <a href="#" title="Third" onclick="slowscroll('#main3')">Third</a>
     </div>
   </header> 
+
+  <div id="top">
+    <h1>Name of site</h1>
+    <h3>fast and reliable!</h3>
+  </div>
+
+  <div id="main">
+    <div class="intro">
+      <h2>Our company is a leader</h2>
+      <span>Smart, innovative and reliable</span>
+    </div>
+    <div class="text">
+      <span>Hundreds of customers enjoy our products and services. We are engineers, and designers solving business challenges with innovative technology solutions. we empower our clients for competitive differentiation in the enterprise digital journey.</span>
+    </div>
+  </div>
+  
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="js/scripts.js"></script>

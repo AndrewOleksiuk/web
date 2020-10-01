@@ -92,3 +92,89 @@ header.fixed #logo {
 .fixed #about a:hover {
     color: #7c7c7c
 }
+
+#top {
+    width: 100%;
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.publicdomainpictures.net%2Fen%2Fview-image.php%3Fimage%3D316756%26picture%3Dbackground-image&psig=AOvVaw2X9Nh-97oHa02OCDJ8u_A0&ust=1601493329644000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOiyydyJj-wCFQAAAAAdAAAAABAJ);
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+  
+@media (min-width: 1001px) {
+    #top {
+      font-size: 3em;
+      height: 1000px;
+    }
+}
+  
+@media (max-width: 1000px) and (min-width: 251px) {
+    #top {
+      font-size: 2em;
+      height: 600px;
+    }
+}
+  
+@media (max-width: 650px) {
+    #top {
+      font-size: 1.3em;
+      padding-top: 50%;
+      height: 500px;
+    }
+}
+  
+@media (max-width: 450px) {
+    #top {
+      font-size: 0.9em;
+    }
+}
+  
+#top h1 {
+    padding-top: 20%;
+}
+  
+#top h3 {
+    color: #ccc;
+}
+
+#main {
+    float: left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size: 1.3em;
+  }
+  
+  @media (min-width: 1401px) {
+    #main {
+      padding: 100px 20%;
+      width: 60%;
+    }
+  }
+  
+  @media (max-width: 1400px) {
+    #main {
+      padding: 100px 10%;
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    #main div {
+      width: 98%!important;
+      margin-bottom: 20px;
+    }
+  }
+  
+  #main div {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+  }
+  
+  #main h2 {font-size: 3em}
+  #main span {color: #a0a0a0}
+  
+  
