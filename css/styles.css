@@ -11,170 +11,213 @@ body, html {
     height: 100%;
 }
 
+/* Preloader */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:#fff;
+  z-index: 99;
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url(preloader.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+}
+
+/*header*/
 header {
-    width: 100%;
-    padding: 10px 0.5% 0px 0.5%;
-    background: transparent;
-    float: left;
-    position: fixed;
+  width: 100%;
+  padding: 10px 0.5% 0px 0.5%;
+  background: transparent;
+  float: left;
+  position: fixed;
 }
 
 header #logo {
-    color: #fff;
-    cursor: pointer;
+  color: #fff;
+  cursor: pointer;
 }
 
 header #logo span {
-    font-size: 1.7em;
-    line-height: 45px;
-    margin-left: 40px;
-    font-family: 'Suez One', serif;
+  font-size: 1.7em;
+  line-height: 45px;
+  margin-left: 40px;
+  font-family: 'Suez One', serif;
 }
 
 @media (min-width: 701px) {
-    #logo {
-      float: left;
-      width: 30%;
-      font-size: 1.1em;
-    }
+  #logo {
+    float: left;
+    width: 30%;
+    font-size: 1.1em;
+  }
 
-    #about {
-        float: right;
-        width: 67%;
-    }
+  #about {
+      float: right;
+      width: 67%;
+  }
 }
 
 @media (max-width: 700px) {
-    #logo {
-      margin-top: 15px;
-      width: 100%;
-      font-size: 1.5em;
-    }
+  #logo {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 1.5em;
+    border-bottom: 1px groove;
+    margin-bottom: 5px;
+  }
 
-    #about {
-        float: left;
-        width: 100%;
-    }
+  #about {
+      float: left;
+      width: 100%;
+  }
 }
 
 #about {
-    text-align: center;
-    font-size: 1em;
-    line-height: 40px;
-    margin-bottom: 10px;
-  }
+  text-align: center;
+  font-size: 1em;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
 
 #about > a {color: #fff}
 
 #about > a:hover {
-    color: #b0b0b0;
-    text-decoration: underline;
+  color: #b0b0b0;
+  text-decoration: underline;
 }
-  
+
 #about > a:not(:last-child) {
-    margin-right: 7%;
+  margin-right: 7%;
 }
 
 .fixed {
-    z-index: 5000;
-    background-color: #fff;
-    border-bottom: 1px solid silver;
-  }
+  z-index: 5000;
+  background-color: #fff;
+  border-bottom: 1px solid silver;
+}
 
 header.fixed #logo {
-    color: #343434;
+  color: #343434;
 }
-  
+
 .fixed #about a {
-    color: #343434
+  color: #343434
 }
 
 .fixed #about a:hover {
-    color: #7c7c7c
+  color: #7c7c7c
 }
 
+/*top*/
 #top {
-    width: 100%;
-    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.publicdomainpictures.net%2Fen%2Fview-image.php%3Fimage%3D316756%26picture%3Dbackground-image&psig=AOvVaw2X9Nh-97oHa02OCDJ8u_A0&ust=1601493329644000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOiyydyJj-wCFQAAAAAdAAAAABAJ);
-    background-blend-mode: multiply;
-    background-color: #2e3a44;
-    background-size: cover;
-    text-align: center;
-    color: #fff;
-}
-  
-@media (min-width: 1001px) {
-    #top {
-      font-size: 3em;
-      height: 1000px;
-    }
-}
-  
-@media (max-width: 1000px) and (min-width: 251px) {
-    #top {
-      font-size: 2em;
-      height: 600px;
-    }
-}
-  
-@media (max-width: 650px) {
-    #top {
-      font-size: 1.3em;
-      padding-top: 50%;
-      height: 500px;
-    }
-}
-  
-@media (max-width: 450px) {
-    #top {
-      font-size: 0.9em;
-    }
-}
-  
-#top h1 {
-    padding-top: 20%;
-}
-  
-#top h3 {
-    color: #ccc;
+  width: 100%;
+  background-image: url("image.jpg");
+  background-blend-mode: multiply;
+  background-color: #485966;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
 }
 
-#main {
-    float: left;
-    background-color: #f6f6f6;
-    border-top: 2px solid silver;
-    color: #484848;
+@media (min-width: 1001px) {
+  #top {
+    font-size: 3em;
+    height: 1000px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 251px) {
+  #top {
+    font-size: 2em;
+    height: 600px;
+  }
+}
+
+@media (max-width: 650px) {
+  #top {
     font-size: 1.3em;
+    padding-top: 50%;
+    height: 500px;
   }
-  
-  @media (min-width: 1401px) {
-    #main {
-      padding: 100px 20%;
-      width: 60%;
-    }
+}
+
+@media (max-width: 450px) {
+  #top {
+    font-size: 0.9em;
   }
-  
-  @media (max-width: 1400px) {
-    #main {
-      padding: 100px 10%;
-      width: 80%;
-    }
+}
+
+#top h1 {
+  padding-top: 20%;
+}
+
+#top h3 {
+  color: #ccc;
+}
+
+/*main*/
+#main {
+  float: left;
+  background-color: #f6f6f6;
+  border-top: 2px solid silver;
+  color: #484848;
+  font-size: 1.3em;
+}
+
+#text {
+  line-height: 1.5;
+}
+
+.intro h2{
+  margin-bottom: 1.5%;
+}
+
+#subtext {
+  font-weight: 550;
+}
+
+@media (min-width: 1401px) {
+  #main {
+    padding: 100px 20%;
+    width: 60%;
   }
-  
-  @media (max-width: 700px) {
-    #main div {
-      width: 98%!important;
-      margin-bottom: 20px;
-    }
+}
+
+@media (max-width: 1400px) {
+  #main {
+    padding: 100px 10%;
+    width: 80%;
   }
-  
+}
+
+@media (max-width: 700px) {
   #main div {
-    width: 48%;
-    margin-right: 2%;
-    float: left;
+    width: 98%!important;
+    margin-bottom: 20px;
   }
-  
-  #main h2 {font-size: 3em}
-  #main span {color: #a0a0a0}
-  
-  
+}
+
+#main div {
+  width: 48%;
+  margin-right: 2%;
+  float: left;
+}
+
+#main h2 {
+  font-size: 3em;
+}
+#main span {
+  color: #a0a0a0;
+}
