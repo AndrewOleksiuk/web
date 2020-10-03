@@ -9,7 +9,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -23,9 +26,9 @@
       <span>Site</span>
     </div>
     <div id="about">
-      <a href="#" title="First" onclick="slowscroll('#top')">First</a>
-      <a href="#" title="Second" onclick="slowscroll('#main')">Second</a>
-      <a href="#" title="Third" onclick="slowscroll('#main3')">Third</a>
+      <a href="#" title="First" onclick="slowScroll('#top')">First</a>
+      <a href="#" title="Second" onclick="slowScroll('#main')">Second</a>
+      <a href="#" title="Third" onclick="slowScroll('#main3')">Third</a>
     </div>
   </header> 
 
@@ -35,20 +38,72 @@
   </div>
 
   <div id="main">
-    <div class="intro">
-      <h2>Our company is a leader in our sphere</h2>
-      <span id="subtext">Smart, innovative and reliable</span>
-    </div>
-    <div id="text">
-      <span>Hundreds of customers enjoy our products and services. We are engineers, developers and 
-        designers solving business challenges with innovative technology solutions. We empower our clients 
-        for competitive differentiation in the enterprise digital journey. We partner with various organizations 
-        ranging from startups to big enterprises helping them to achieve business success by creating winning teams 
-        and products while leveraging lean organization principles</span>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6" id="intro">
+          <h2>Our company is a leader in our sphere</h2>
+          <span id="subtext">Smart, innovative and reliable</span>
+        </div>
+        <div class="col-md-6" id="text">
+          <span>Hundreds of customers enjoy our products and services. We are engineers, developers and 
+            designers solving business challenges with innovative technology solutions. We empower our clients 
+            for competitive differentiation in the enterprise digital journey. We partner with various organizations 
+            ranging from startups to big enterprises helping them to achieve business success by creating winning teams 
+            and products while leveraging lean organization principles</span>
+        </div>
+      </div>
     </div>
   </div>
+
+  <section class="team padding-lg">
+  <div class="container">
+    <div class="row heading heading-icon">
+      <h2>Our Team</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="cnt-block equal-hight">
+          <figure><img src="team1.jpg" class="img-responsive" alt=""></figure>
+          <h3>John Green</h3>
+          <p>Full-stack Web Developer</p>
+          <ul class="follow-us clearfix">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="cnt-block equal-hight">
+          <figure><img src="team2.jpg" class="img-responsive" alt=""></figure>
+          <h3>Jessica Domes</h3>
+          <p>QA Engineer</p>
+          <ul class="follow-us clearfix">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="cnt-block equal-hight">
+          <figure><img src="team3.jpg" class="img-responsive" alt=""></figure>
+          <h3>Alan Key</h3>
+          <p>DevOps</p>
+          <ul class="follow-us clearfix">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
   
 
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
 </body>
