@@ -28,7 +28,7 @@
     <div id="about">
       <a href="#" title="First" onclick="slowScroll('#top')">First</a>
       <a href="#" title="Second" onclick="slowScroll('#main')">Second</a>
-      <a href="#" title="Third" onclick="slowScroll('#main3')">Third</a>
+      <a href="#" title="Third" onclick="slowScroll('#team')">Third</a>
     </div>
   </header> 
 
@@ -56,52 +56,98 @@
   </div>
 
   <section class="team padding-lg">
-  <div class="container">
-    <div class="row heading heading-icon">
-      <h2>Our Team</h2>
+    <div class="container">
+      <div class="row heading heading-icon">
+        <h2>Our Team</h2>
+      </div>
+      <div class="row" id="team">
+        <div class="col-md-4">
+          <div class="cnt-block equal-hight">
+            <figure><img src="team1.jpg" class="img-responsive" alt=""></figure>
+            <h3>John Green</h3>
+            <p>Full-stack Web Developer</p>
+            <ul class="follow-us clearfix">
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cnt-block equal-hight">
+            <figure><img src="team2.jpg" class="img-responsive" alt=""></figure>
+            <h3>Jessica Domes</h3>
+            <p>QA Engineer</p>
+            <ul class="follow-us clearfix">
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cnt-block equal-hight">
+            <figure><img src="team3.jpg" class="img-responsive" alt=""></figure>
+            <h3>Alan Key</h3>
+            <p>DevOps</p>
+            <ul class="follow-us clearfix">
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="cnt-block equal-hight">
-          <figure><img src="team1.jpg" class="img-responsive" alt=""></figure>
-          <h3>John Green</h3>
-          <p>Full-stack Web Developer</p>
-          <ul class="follow-us clearfix">
-            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="cnt-block equal-hight">
-          <figure><img src="team2.jpg" class="img-responsive" alt=""></figure>
-          <h3>Jessica Domes</h3>
-          <p>QA Engineer</p>
-          <ul class="follow-us clearfix">
-            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="cnt-block equal-hight">
-          <figure><img src="team3.jpg" class="img-responsive" alt=""></figure>
-          <h3>Alan Key</h3>
-          <p>DevOps</p>
-          <ul class="follow-us clearfix">
-            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
   </section>
 
+
   
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Technologies</h6>
+          <ul class="footer-links">
+            <li><p>ASP.NET</p></li>
+            <li><p>Angular</p></li>
+            <li><p>HTML</p></li>
+            <li><p>JavaScript</p></li>
+            <li><p>Android</p></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#" onclick="slowScroll('#top')">Site header</a></li>
+            <li><a href="#" onclick="slowScroll('#main')">About us</a></li>
+            <li><a href="#" onclick="slowScroll('#team')">Our team</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by CompanyName.</p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="linkedin" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
 
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
