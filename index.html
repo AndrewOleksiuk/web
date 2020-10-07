@@ -9,8 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="SitePoint">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
-  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -26,9 +25,9 @@
       <span>Site</span>
     </div>
     <div id="about">
-      <a href="#" title="First" onclick="slowScroll('#top')">First</a>
-      <a href="#" title="Second" onclick="slowScroll('#main')">Second</a>
-      <a href="#" title="Third" onclick="slowScroll('#team')">Third</a>
+      <a href="#" title="Top" onclick="slowScroll('#top')">Top</a>
+      <a href="#" title="About" onclick="slowScroll('#main')">About</a>
+      <a href="#" title="Team" onclick="slowScroll('#team')">Team</a>
     </div>
   </header> 
 
@@ -101,31 +100,32 @@
     </div>
   </section>
 
-
   
-  <footer class="site-footer">
+  <footer id="footer">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6">
           <h6>About</h6>
-          <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+          <p class="text-justify">Company <i>CODE WANTS TO BE SIMPLE </i> is an initiative  
+            to help the upcoming programmers with the code. Company focuses on providing the
+             most efficient code or snippets as the code wants to be simple. We will help programmers 
+             build up concepts in different programming languages that include C, C++, Java, HTML, CSS, 
+             Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
         </div>
-
         <div class="col-xs-6 col-md-3">
           <h6>Technologies</h6>
           <ul class="footer-links">
             <li><p>ASP.NET</p></li>
-            <li><p>Angular</p></li>
+            <li><p>AngularJS</p></li>
             <li><p>HTML</p></li>
             <li><p>JavaScript</p></li>
-            <li><p>Android</p></li>
+            <li><p>C#</p></li>
           </ul>
         </div>
-
         <div class="col-xs-6 col-md-3">
           <h6>Quick Links</h6>
           <ul class="footer-links">
-            <li><a href="#" onclick="slowScroll('#top')">Site header</a></li>
+            <li><a href="#" onclick="slowScroll('#top')">To top</a></li>
             <li><a href="#" onclick="slowScroll('#main')">About us</a></li>
             <li><a href="#" onclick="slowScroll('#team')">Our team</a></li>
           </ul>
@@ -150,7 +150,7 @@
 </footer>
 
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
