@@ -42,7 +42,7 @@ $(document).on("scroll", function () {
     } else {
       firstBox.classList.remove("active");
     }
-    if (isFullyVisible(secondBox)) {
+    if (isPartiallyVisible(secondBox)) {
       secondBox.classList.add("active");
     } else {
       secondBox.classList.remove("active");
@@ -64,11 +64,25 @@ $(document).on("scroll", function () {
     return ((top + height >= 0) && (height + window.innerHeight >= bottom));
   }
 
-  function isFullyVisible(el) {
-    var elementBoundary = el.getBoundingClientRect();
+  var slide_index = 1;  
+  displaySlides(slide_index);  
 
-    var top = elementBoundary.top;
-    var bottom = elementBoundary.bottom;
+  function nextSlide(n) {  
+      displaySlides(slide_index += n);  
+  }  
 
-    return ((top >= 0) && (bottom <= window.innerHeight));
-  }
+  function currentSlide(n) {  
+      displaySlides(slide_index = n);  
+  }  
+
+  function displaySlides(n) {  
+      var i;  
+      var slides = document.getElementsByClassName("showSlide");  
+      if (n > slides.length) { slide_index = 1 }  
+      if (n < 1) { slide_index = slides.length }  
+      for (i = 0; i < slides.length; i++) {  
+          slides[i].style.display = "none";  
+      }  
+      slides[slide_index - 1].style.display = "block";  
+      setTimeout(nextSlide, 5000, 1);
+  }  

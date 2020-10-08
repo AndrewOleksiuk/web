@@ -255,6 +255,75 @@ header.fixed #logo {
   color: #a0a0a0;
 }
 
+/* projects */
+
+.showSlide {  
+  display: none  
+}  
+  .showSlide img {  
+      width: 100%; 
+      height: 600px; 
+  }  
+.slidercontainer {  
+  position: relative;  
+  margin: auto;  
+}  
+.left, .right {  
+  cursor: pointer;  
+  position: absolute;  
+  top: 50%;  
+  width: auto;  
+  padding: 16px;  
+  margin-top: -22px;  
+  color: white;  
+  font-weight: bold;  
+  font-size: 18px;  
+  transition: 0.6s ease;  
+  border-radius: 0 3px 3px 0;  
+}  
+.right {  
+  right: 0;  
+  border-radius: 3px 0 0 3px;  
+}  
+  .left:hover, .right:hover {  
+      background-color: rgba(115, 115, 115, 0.8);  
+  }  
+.subtext {  
+  color: #eff5d4;  
+  font-size: 30px;  
+  padding: 8px 12px;  
+  position: absolute;  
+  top: 10px;  
+  width: 100%;  
+  text-align: center;  
+}  
+
+/* Fading animation */  
+.fade {  
+  -webkit-animation-name: fade;  
+  -webkit-animation-duration: 5s;  
+  animation-name: fade;  
+  animation-duration: 5s;  
+}  
+@-webkit-keyframes fade {  
+  from {  
+      opacity: .4  
+  }  
+  to {  
+      opacity: 1  
+  }  
+}  
+
+@keyframes fade {  
+  from {  
+      opacity: .4  
+  }  
+  to {  
+      opacity: 1  
+  }  
+} 
+
+
 /*team*/
 
 .row.heading h2 {
@@ -388,6 +457,8 @@ ul{
 .team .cnt-block .follow-us li .fa:hover{ 
    color:#025a8e;
 }
+
+
 
 /* footer*/
 
