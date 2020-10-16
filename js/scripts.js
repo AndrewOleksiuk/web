@@ -32,8 +32,9 @@ $(document).on("scroll", function () {
 
   document.addEventListener("DOMContentLoaded", scrolling, false);
   var firstBox = document.querySelector("#main");
-  var secondBox = document.querySelector("#team");
-  var thirdBox = document.querySelector("#footer");
+  var secondBox = document.querySelector("#our-projects");
+  var thirdBox = document.querySelector("#team");
+  var fourthBox = document.querySelector("#footer");
 
   function scrolling(e) {
 
@@ -51,6 +52,11 @@ $(document).on("scroll", function () {
       thirdBox.classList.add("active");
     } else {
       thirdBox.classList.remove("active");
+    }
+    if (isPartiallyVisible(thirdBox)) {
+      fourthBox.classList.add("active");
+    } else {
+      fourthBox.classList.remove("active");
     }
   }
 
@@ -71,18 +77,14 @@ $(document).on("scroll", function () {
       displaySlides(slide_index += n);  
   }  
 
-  function currentSlide(n) {  
-      displaySlides(slide_index = n);  
-  }  
-
   function displaySlides(n) {  
       var i;  
-      var slides = document.getElementsByClassName("showSlide");  
+      var slides = document.getElementsByClassName("carousel-item");  
       if (n > slides.length) { slide_index = 1 }  
       if (n < 1) { slide_index = slides.length }  
       for (i = 0; i < slides.length; i++) {  
-          slides[i].style.display = "none";  
+          slides[i].classList.remove("active");
       }  
-      slides[slide_index - 1].style.display = "block";  
-      setTimeout(nextSlide, 5000, 1);
+      slides[slide_index - 1].classList.add("active");;  
+      setTimeout(nextSlide, 10000, 1);
   }  
