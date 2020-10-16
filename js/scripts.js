@@ -53,7 +53,7 @@ $(document).on("scroll", function () {
     } else {
       thirdBox.classList.remove("active");
     }
-    if (isPartiallyVisible(thirdBox)) {
+    if (isPartiallyVisible(fourthBox)) {
       fourthBox.classList.add("active");
     } else {
       fourthBox.classList.remove("active");
